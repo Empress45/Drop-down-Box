@@ -1,5 +1,8 @@
-import select from './select'
+import Select from './select.js'
 
+const selectElements = document.querySelectorAll('[data-custom]')
 
-const select = new Select(selectElement)
+selectElements.forEach(selectElement => {
+  console.log(new Select(selectElement))
+})
 
